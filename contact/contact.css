@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  /* ====================menu=============== */
+  .menu{
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    background-color: white;
+  
+  }
+  #carouselExample{
+    margin-top:80px;
+  }
+  
+  .bann-img{
+    width: 60px;
+    height: 50px;
+  }
+  .nav-link:hover{
+    color: deeppink !important;
+    font-weight: bold;
+  }
+  .bd{
+    border-bottom: 1px solid rgb(173, 171, 171) !important;
+  }
+  @media(min-width: 992px){
+    .bd{
+        border-bottom: none !important;
+    }
+  }
+  /* Name Product */
+  .product .ling{
+    width: 200px;
+    height: 4px;
+    background-color: deepskyblue;
+  }
+  .product .star{
+    position:absolute;
+    right: 20px;
+    top:20px;
+    background-color: rgb(173, 171, 171);
+    padding: 10px;
+    clip-path: circle(46.2% at 50% 50%);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .product .box-list:hover .img-box{
+    transform: scale(1.10);
+    border: double;
+    transition: all 0.3s;
+  }
+  .payment .line{
+    width: 150px;
+    height: 4px;
+    background-color: aqua;
+  }
+  .payment .icon:hover{
+    background-color: aqua;
+    color: white;
+  }
+  .payment .icon:hover span i{
+    color: white;
+  }
+  .carousel-inner img{
+    width: 200px;
+    height: 400px;
+  }
+  .img-fluid{
+    width: 200px;
+    margin-top: -20px;
+  }
+  .card{
+    width: 285px;
+    height: 400px;
+  }
+  .card-body{
+    width: 250px;
+    height: 350px;
+  }
+  #btn{
+    padding: 5px 10px;
+    padding-left: 45px;
+    
+  }
+  .row {
+    gap: 20px; /* Adjust spacing between cards */
+  }
+  #bar{
+    width: 100%;
+    height: 90px;
+  }
+  #welcome{
+    margin-top: 10px;
+    margin-bottom: -120px;
+  }
+  body{
+    background-color: rgb(126, 217, 217);
+    height: 120vh auto;
+    margin-bottom: 50px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+.title-Contact{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(126, 217, 217);
+    margin-top: 80px;
+}
+.title-Contact h1{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.box{
+  margin: 0 auto;
+  width: 80% ;
+  height: 80vh auto;
+  background-color: tomato;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+  padding: 30px;
+  
+
+}
+.box .box-1{
+  width: 100%;
+  height: 100%;
+  /* background-color: blueviolet; */
+ 
+}
+.box-1 .icon-text{
+  width: 100% auto;
+  height: 80px ;
+  background-color: red;
+  margin-top: 15px;
+  display: flex;
+}
+.icon-text .icon{
+  width: 15%;
+  height: 100%;
+  background-color: brown;
+  text-align: center;
+  padding-top: 12px;
+}
+.icon i{
+  font-size: 50px  !important;
+  color: white;
+}
+.icon-text .text{
+  width: 85%;
+  height: 100%;
+  background-color: bisque;
+  padding: 10px 10px;
+  
+}
+.box-1 .connect-us{
+  width: 100%;
+  height: 200px;
+  /* background-color: aqua; */
+  margin-top: 15px;
+
+}
+.connect-us .text{
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  /* background-color:rosybrown; */
+}
+.box-1 .connect-us .icon{
+  width: 100%;
+  height: 100px;
+  /* background-color: tomato; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.box-1 .connect-us .icon i{
+  font-size: 40px;
+  color: white;
+}
+
+.box .box-2{
+  width: 100% auto;
+  height: 80% auto;
+  background-color: white;
+  padding: 30px ;
+}
+.box-2 .title{
+  width: 100% auto;
+  height: 80px;
+  /* background-color: aquamarine; */
+  margin-top: 15px;
+  padding: 20px;
+ 
+}
+.box-2 .chat{
+  width: 100% auto;
+  height: 250px;
+  background-color: tomato;
+  padding: 20px;
+}
+.box-2 .chat input{
+  margin-top: 20px;
+  padding: 10px ;
+}
+.box-2 .chat button{
+  margin-top: 20px;
+  padding: 8px;
+  border: 3px solid red;
+}
+.box-2 .chat button:hover{
+  background-color: red;
+}
+@media( max-width: 1100px){
+  .box{
+    grid-template-columns:repeat(1, 1fr)!important;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+@media( max-width: 900px){
+  .box{
+    grid-template-columns:repeat(1, 1fr)!important;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+@media( max-width: 500px){
+  .box .box-1 .icon-text{
+    height: 50px;
+
+  }
+  .box .box-1{
+    align-items: center;
+    justify-items: center;
+
+  }
+  .box .box-1 .icon-text{
+    width: 250px;
+    height: 60px;
+   
+
+  }
+  .box .box-1 .icon-text h4{
+    font-size: 15px;
+
+  }
+  .box .box-1 .icon-text h5{
+    font-size: 15px;
+
+  }
+  
+  .box .box-1 .icon i{
+    font-size: 30px !important;
+    color: white;
+  }
+  .box{
+    align-items: center;
+    justify-items: center;
+  }
+  .box .box-2{
+    width: 270px;
+   
+  }
+  .box .box-2 .chat input{
+    padding: 1px;
+    width: 150px ;
+  }
+}
+@media( max-width: 400px){
+  .box .box-1 .icon-text{
+    height: 50px;
+
+  }
+  .box .box-1{
+    align-items: center;
+    justify-items: center;
+
+  }
+  .box .box-1 .icon-text{
+    width: 230px;
+    height: 50px;
+   
+
+  }
+  .box .box-1 .icon-text h4{
+    font-size: 12px;
+
+  }
+  .box .box-1 .icon-text h5{
+    font-size: 12px;
+
+  }
+  
+  .box .box-1 .icon i{
+    font-size: 20px !important;
+    color: white;
+  }
+  .box{
+    align-items: center;
+    justify-items: center;
+  }
+  .box .box-2{
+    width: 230px;
+    margin-top: -40px;
+    
+   
+  }
+  .box .box-2 .title h3{
+    font-size: 20px;
+  }
+  .box .box-2 .chat{
+    height: 200px;
+  }
+  .box .box-2 .chat input{
+    padding: 1px;
+    width: 120px ;
+  }
+  .box .box-2 .chat button{
+    padding: 1px;
+    
+  }
+}
+
+
+
